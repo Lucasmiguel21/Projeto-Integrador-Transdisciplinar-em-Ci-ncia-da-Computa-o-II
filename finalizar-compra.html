@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Fortuna Cake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fortuna Cake</h1>
+        <p class="subtitulo">Finalize sua compra e receba os melhores cupcakes da região</p>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos-compra">
+            <h2>Produtos Comprados</h2>
+            <ul id="listaProdutos">
+            </ul>
+        </section>
+
+        <section id="dados-entrega">
+            <h2>Dados de Entrega</h2>
+            <form id="formEntrega">
+                <div class="campo">
+                    <label for="nome">Nome do Destinatário:</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" required>
+                </div>
+
+                <div class="campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" required>
+                </div>
+            </form>
+        </section>
+
+        <section id="pagamento">
+            <h2>Escolha a Forma de Pagamento</h2>
+            <div>
+                <label>
+                    <input type="radio" name="pagamento" id="cartao" value="cartao"> Cartão de Crédito
+                </label>
+                <label>
+                    <input type="radio" name="pagamento" id="pix" value="pix"> PIX
+                </label>
+            </div>
+
+            <div id="dadosCartao" style="display: none;">
+                <input type="text" id="numeroCartao" placeholder="Número do Cartão">
+                <input type="text" id="nomeCartao" placeholder="Nome no Cartão">
+                <input type="text" id="validade" placeholder="Validade (MM/AA)">
+                <input type="text" id="cvv" placeholder="CVV">
+            </div>
+        </section>
+
+        <section id="finalizar">
+            <button class="btn" onclick="finalizarPedido()">Finalizar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fortuna Cake. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

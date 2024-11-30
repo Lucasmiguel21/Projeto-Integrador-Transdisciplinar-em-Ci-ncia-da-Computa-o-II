@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortuna Cake - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fortuna Cake</h1>
+        <p class="subtitulo">Delicie-se com os melhores cupcakes da cidade!</p>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="cadastro.html">Cadastro</a>
+        </nav>
+        <div id="saudacao" style="color: #ffffff; font-size: 1.2em;"></div>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produtos-container">
+                <div class="produto">
+                    <img src="cupcake1.jpg" alt="Cupcake de Chocolate">
+                    <p>Cupcake de Chocolate</p>
+                    <p>R$ 15,00</p>
+                    <button class="btn" onclick="adicionarCarrinho('Cupcake de Chocolate', 15)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="cupcake2.jpg" alt="Cupcake de Morango">
+                    <p>Cupcake de Morango</p>
+                    <p>R$ 18,00</p>
+                    <button class="btn" onclick="adicionarCarrinho('Cupcake de Morango', 18)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto">
+                    <img src="cupcake3.jpg" alt="Cupcake de Baunilha">
+                    <p>Cupcake de Baunilha</p>
+                    <p>R$ 12,00</p>
+                    <button class="btn" onclick="adicionarCarrinho('Cupcake de Baunilha', 12)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="listaCarrinho">
+                <!-- Itens do carrinho serão adicionados aqui -->
+            </ul>
+            <button class="btn" onclick="finalizarCompra()">Finalizar Compra</button> <!-- Somente este botão agora -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fortuna Cake. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
